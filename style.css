@@ -1,0 +1,42 @@
+.legend {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.fieldset {
+    border: 10px solid;
+    text-align: center;
+    color: black;
+    background-color: grey;
+}
+
+.inputUser {
+    font-style: italic;
+    width: 500px;
+    height: 30px;
+
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser2 {
+    font-style: italic;
+    width: 500px;
+    height: 200px;
+    text-align: Justify left;
+
+}
+
+.background {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/7/79/Polcivpernambuco.png") no-repeat top;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocorrência</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+    <div class="box">
+        <form class="form" method="POST" action="processar.php">
+            <fieldset class="fieldset">
+                <legend class="legend"><b>Departamento de policia de Pernambuco</b></legend>
+                <h2>Boletim de Ocorrência</h2>
+                <div class="background">
+                </div>
+                <div class="inputBox">
+                    <label for="nome">Nome completo</label>
+                    <br>
+                    <input type="imput" name="nome" id="nome" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="imput" name="email" id="email" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="fone">Telefone</label>
+                    <br>
+                    <input type="imput" name="fone" id="fone" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="desc">Descrição da Ocorrência</label>
+                    <br>
+                    <textarea name="desc" id="desc" class="inputUser2" required></textarea>
+                </div>
+                <br>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="Masculino">Masculino</label>
+                <br><br>
+                <label for="data_nascimento"><b>Data da Ocorrência</b></label>
+                <input type="datetime-local" name="data_ocorrencia" id="data_ocorrencia" required>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.</button>
+        <p id="demo"></p>
+    </div>
+</body>
+
+</html>
