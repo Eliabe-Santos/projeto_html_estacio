@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocorrência</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> <!--Conexão com o CSS-->
 </head>
 
 <body class="body">
     <div class="box">
-        <form class="form" method="POST" action="processar.php">
+        <form class="form" method="POST" action="processar.php"> <!--Conexão com o php-->
             <fieldset class="fieldset">
                 <legend class="legend"><b>Departamento de policia de Pernambuco</b></legend>
                 <h2>Boletim de Ocorrência</h2>
@@ -54,8 +54,19 @@
                 <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-            Click me to display Date and Time.</button>
+
+        <button onclick="window.location.href = 'https://www.pm.pe.gov.br/';">Ir para o site da Polícia Militar de
+            Pernambuco</button>
+
+        <script>
+            setInterval(function () {
+                var currentTime = new Date();
+                var hours = currentTime.getHours();
+                var minutes = currentTime.getMinutes();
+                var seconds = currentTime.getSeconds();
+                document.getElementById('demo').innerHTML = hours + ":" + minutes + ":" + seconds;
+            }, 1000);
+        </script>
         <p id="demo"></p>
     </div>
 </body>
